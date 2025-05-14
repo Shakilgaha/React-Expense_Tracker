@@ -13,11 +13,9 @@ const initialState = {
 // ?Expense Reducer Function
 
 const expenseReducer = (state, action) => {
-    console.log("state : ", state)
     switch (action.type) {
 
         case "ADD_EXPENSE":
-            console.log("state 2: ", state, "action : ", action)
             return {
                 ...state,
                 expenses: [...state.expenses, action.payload]
@@ -90,7 +88,6 @@ export const ExpenseProvider = ({ children }) => {
                 ...expense,
                 id: crypto.randomUUID()
             };
-            console.log("newExpense : ", newExpense, "expense : ", expense)
             //! Dispatch For Add Expense
             dispatch({
                 type: "ADD_EXPENSE",

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+
+
+
+
+@theme {
+    --color-expense: #7e69ab;
+    --color-expense-light: #9b87f5;
+    --color-expense-dark: #6e59a5;
+}
+
+
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+}
+
+.active {
+    @apply after:w-full text-purple-600
+}
+
+.container {
+    @apply max-w-[90rem] m-auto px-4
+}
+
+.box {
+    @apply bg-white shadow hover:shadow-lg   rounded-md p-6
+}
+
+.form-input {
+    @apply px-4 py-2 border border-gray-300 outline-none focus:ring focus:ring-expense-light rounded-md w-full transition-all placeholder:text-sm focus:border-transparent
+}
+
+.btn {
+    @apply bg-expense-light rounded-md px-9 py-2 text-white font-semibold hover:bg-expense-dark transition-colors duration-300 focus:outline-none
+}
+
+form input,
+textarea {
+    @apply w-full p-3 bg-white border border-zinc-400 rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-400 dark:bg-zinc-900 dark:border-zinc-600
+}
+
+.btn-2 {
+    /* @apply bg-purple-600 text-white px-8 py-3 rounded-md hover:scale-110 ; */
+    @apply inline-block bg-gradient-to-r from-purple-500 hover:from-purple-600 via-purple-400 hover:via-purple-500 to-purple-500 hover:to-purple-600 transition-colors text-white px-6 py-3 rounded-lg text-lg font-medium
+}

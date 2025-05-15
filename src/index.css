@@ -32,7 +32,7 @@ body {
 }
 
 .form-input {
-    @apply px-4 py-2 border border-gray-300 outline-none focus:ring focus:ring-expense-light rounded-md w-full transition-all placeholder:text-sm focus:border-transparent
+    @apply bg-white text-black px-4 py-2 border border-gray-300 outline-none focus:ring focus:ring-expense-light rounded-md w-full transition-all placeholder:text-sm focus:border-transparent
 }
 
 .btn {
